@@ -10,7 +10,6 @@ export default function Tipo() {
       setPokeList(res.data.pokemon)
     )
   }, [params])
-  console.log(pokeList)
 
   return (
     <div className="container">

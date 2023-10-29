@@ -6,7 +6,7 @@ export default function Pokemon() {
   const [poke, setPoke] = useState('')
   const params = useParams()
 
-  function ucwords(str) {
+  function ucwords(str="") {
     return str.toLowerCase().replace(/\b\w/g, function (char) {
       return char.toUpperCase()
     })
@@ -17,7 +17,6 @@ export default function Pokemon() {
       setPoke(res.data)
     )
   }, [params])
-  console.log(poke)
 
   return (
     <div>
