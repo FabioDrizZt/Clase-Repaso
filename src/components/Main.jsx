@@ -1,8 +1,16 @@
+import logo from '../assets/Logo-Pokemon.png'
+
 export default function Main() {
   return (
-    <div>
-      <h1>Titulo de mi pagina</h1>
-      <p>contenido de la pagina principal</p>
+    <div className="main-container">
+      <h1 className="main-title">¡Bienvenido a la Página de Pokémon!</h1>
+      <img className="pokemon-logo" src={logo} alt="Logo de Pokémon" />
+      <p className="main-text">
+        ¡Explora el maravilloso mundo de los Pokémon y descubre todas sus
+        habilidades y características! Diviértete explorando los diferentes
+        tipos de Pokémon, capturando nuevos amigos y enfrentando emocionantes
+        batallas.
+      </p>
     </div>
   )
 }

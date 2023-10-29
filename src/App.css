@@ -42,3 +42,24 @@ aside {
   overflow-y: auto;
   height: 90vh;
 }
+
+.main-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.main-title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.pokemon-logo {
+  width: 400px;
+  height: auto;
+  margin-bottom: 20px;
+}
+
+.main-text {
+  font-size: 16px;
+  line-height: 1.5;
+}
