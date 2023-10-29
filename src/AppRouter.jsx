@@ -5,18 +5,19 @@ import Pokemons from './pages/Pokemons'
 import Tipo from './components/Tipo'
 import Tipos from './pages/Tipos'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { routes } from './Routes'
 
 export default function AppRouter() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<App />}>
-          <Route path="/pokemons" element={<Pokemons />}>
-            <Route path="/pokemons/:name" element={<Pokemon />} />
+        <Route path={routes.app} element={<App />}>
+          <Route path={routes.pokemons} element={<Pokemons />}>
+            <Route path={routes.pokemon} element={<Pokemon />} />
           </Route>
-          <Route path="/tipos" element={<Tipos />}>
-            <Route path="/tipos/:tipo" element={<Tipo />}>
-              <Route path="/tipos/:tipo/:name" element={<Pokemon />} />
+          <Route path={routes.tipos} element={<Tipos />}>
+            <Route path={routes.tipo} element={<Tipo />}>
+              <Route path={routes.tipoPokemon} element={<Pokemon />} />
             </Route>
           </Route>
         </Route>
