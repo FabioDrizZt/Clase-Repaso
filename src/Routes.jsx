@@ -1,7 +1,7 @@
 export const routes = {
   app: '/',
-  pokemons: '/pokemon',
-  pokemon: '/pokemon/:name',
+  pokemons: '/pokemons',
+  pokemon: '/pokemons/:name',
   tipos: '/tipos',
   tipo: '/tipos/:tipo',
   tipoPokemon: '/tipos/:tipo/:name'
