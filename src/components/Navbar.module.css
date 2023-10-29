@@ -1,0 +1,24 @@
+.logoContainer {
+  display: flex;
+  align-items: center;
+}
+
+.logo{
+  width: 100px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  background-color: #f2f2f2;
+}
+
+.linkContainer{
+  display: flex;
+  gap: 10px;
+  list-style: none;
+}
